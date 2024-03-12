@@ -11,18 +11,18 @@ initialization funcion
 
 ```c
 #Coefficents
-float coeffs[N] = {...}
+float coeffs[N] = {...};
 
 int main(){
 FIR_t * filter;
-filt = initFilter(&coeffs,N,xMax); # Coefficents, Order of the Filter (TAPS), Upper bounding for Signal
+filt = initFilter(&coeffs,N,xMax); // Coefficents, Order of the Filter (TAPS), Upper bounding for Signal
 
 while(1){
     int x = readSignal();
-    int x = filter(filt,x); # Returns filtered signal with a delay of N samples
+    int x = filter(filt,x); // Returns filtered signal with a delay of N samples
 }
 
-deInitFilter(filter)
+deInitFilter(filt);
 return 1;
 }
 ```
