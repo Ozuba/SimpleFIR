@@ -28,3 +28,5 @@ return 1;
 ```
 
 ## Filter Design
+I recommend to use the awesome work by Christian Münker  with his [pyfda](https://github.com/chipmuenk/pyfda), aswell as to read a bit about how filters really work,
+(Laplace/Z-Transform/Transfer-Functions...)
