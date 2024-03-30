@@ -26,6 +26,14 @@ deInitFilter(filt);
 return 1;
 }
 ```
+# Results
+The following signal was filtered using this library, take in mind that there is still a quatization noise due to the lack of resolution of the adc at the range of the input signal.
+Pre-Filtering             |  After-Filtering
+:-------------------------:|:-------------------------:
+![image](https://github.com/Ozuba/SimpleFIR/assets/96722632/e32c6b1f-3509-407c-8e2a-2958c7658eca)  |  ![image](https://github.com/Ozuba/SimpleFIR/assets/96722632/a17b4c72-09d9-4a50-9f93-50bcd5a67cf4)
+
+
+
 
 ## Filter Design
 I recommend to use the awesome work by Christian Münker  with his [pyfda](https://github.com/chipmuenk/pyfda), aswell as to read a bit about how filters really work,
