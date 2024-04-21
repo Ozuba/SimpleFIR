@@ -10,7 +10,7 @@ initialization funcion
 ## Example usage
 
 ```c
-#Coefficents
+//Coefficents
 float coeffs[N] = {...};
 
 int main(){
@@ -19,7 +19,7 @@ filt = initFilter(&coeffs,N,xMax); // Coefficents, Order of the Filter (TAPS), U
 
 while(1){
     int x = readSignal();
-    int x = filter(filt,x); // Returns filtered signal with a delay of N samples
+    x = filter(filt,x); // Returns filtered signal with a delay of N samples
 }
 
 deInitFilter(filt);
