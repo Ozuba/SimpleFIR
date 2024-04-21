@@ -43,4 +43,7 @@ inline int32_t get(FIR_t *filt, uint16_t i); // gets sample x[n-index]
 //Aux functions
 void float2int(float factor, float *src, int32_t *dest, size_t size); //Normalizes an array by factor
 
+//Generación de filtros
+FIR_t *movingAvgFilter(uint32_t M, int32_t xMax);
+
 #endif /* SRC_FIRFILTER_H_ */
