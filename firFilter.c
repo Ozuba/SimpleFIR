@@ -99,7 +99,7 @@ void float2int(float factor, float *src, int32_t *dest, size_t size)
 FIR_t *movingAvgFilter(uint32_t M, int32_t xMax)
 {
 	float avgCoeff[M]; // Tasty VLA
-	for (uint32_t i; i < M; i++)
+	for (uint32_t i = 0; i < M; i++)
 	{
 		avgCoeff[i] = 1.0 / (float)M;
 	}
